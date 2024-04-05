@@ -1,4 +1,4 @@
-package ql.computation;
+package q1.computaton; 
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.util.Collection;
 @RunWith(Parameterized.class)
 public class TestComputation_Parameterized {
     private int mInput1, mInput2, mExpected;
-    private Computation com = new Computation();
+    private Computation com = new Computation(); // Assuming Computation is your main class to test
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
@@ -29,7 +29,7 @@ public class TestComputation_Parameterized {
 
     @Test
     public void testCalculateDiscount() {
-        int result = com.calculateDiscount(mInput1, mInput2);
+        int result = com.calculateDiscount(mInput1, mInput2); // Assuming calculateDiscount is the method to test
         Assert.assertEquals(mExpected, result);
     }
 }
